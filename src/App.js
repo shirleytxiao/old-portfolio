@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Navigation from './components/navigation';
+import Header from './components/header';
+import About from './components/about';
+import Services from './components/services';
+import Work from './components/work';
+import Footer from './components/footer';
+import NSCPanel from './components/nsc-panel';
+import NSCVideoEditor from './components/nsc-video-editor';
+import NSCContentCamera from './components/nsc-content-camera';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+class App extends Component {
+  render() {
+    return (
+    <div>
+        <div id="colorlib-main-nav">
+            <Navigation></Navigation>
+        </div>
+        <div id="colorlib-page">
+            <NSCPanel></NSCPanel>
+            <NSCVideoEditor></NSCVideoEditor>
+            <NSCContentCamera></NSCContentCamera>
+        </div>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
