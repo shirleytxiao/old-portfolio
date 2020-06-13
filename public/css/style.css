@@ -1,9 +1,32 @@
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
+  url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+  url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+  url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+  @font-face {
+    font-family: Apercu-Bold;
+
+    src: url("../fonts/apercu/apercubold/ApercuBold.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/apercu/apercubold/ApercuBold.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/apercu/apercubold/ApercuBold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+    @font-face {
+      font-family: Apercu-Medium;
+
+      src: url("../fonts/apercu/apercumedium/ApercuMedium.svg") format("svg"), /* Legacy iOS */
+        url("../fonts/apercu/apercumedium/ApercuMedium.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/apercu/apercumedium/ApercuMedium.woff2") format("woff2"); /* Modern Browsers */
+      font-weight: normal;
+      font-style: normal;
+    }
 
 /* =======================================================
 *
@@ -57,9 +80,9 @@ span {
   font-size: 18px;
   color: rgba(114, 114, 114, 0.8); }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Apercu-Medium", Georgia, serif;
   margin: 0 0 30px 0; }
 
 ::-webkit-selection {
@@ -111,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   padding: 4em 40px 40px 40px;
-  width: 360px;
+  width: 180px;
   height: 100%;
   background: white;
   z-index: 1002;
@@ -146,8 +169,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
@@ -204,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
           outline: none;
           text-decoration: none; }
       #colorlib-main-nav ul li.active a {
-        color: #CA82F8; }
+        color: #333333; }
   #colorlib-main-nav .form-group {
     margin-bottom: 40px;
     position: relative;
@@ -349,6 +370,25 @@ header {
     #colorlib-about {
       padding: 5em 0; } }
 
+
+/* self-added: name logo */
+.name-logo {
+  margin-bottom: 3em; }
+  .name-logo h2 {
+    display: inline-block;
+    font-family: "Apercu-Medium";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    color: #000;
+    position: relative; }
+  .name-logo:hover, .name-logo:focus {
+    text-decoration: underline;
+    text-decoration-color: #23527c;
+    }
+
+
 .rotate {
   position: absolute;
   top: .4em;
@@ -378,6 +418,14 @@ header {
       width: 40px;
       height: 1px; }
 
+/* added for Hi, I'm Shirley.*/
+.hi-name {
+  .hi-name:hover, .hi-name:focus {
+    text-decoration: underline;
+    text-decoration-color: #23527c;
+    }
+}
+
 .about-desc {
   padding-top: 3em; }
   .about-desc h2 {
@@ -387,7 +435,7 @@ header {
       margin-bottom: 0;
       color: #000;
       font-size: 50px;
-      font-family: "Playfair Display", Georgia, serif; }
+      font-family: "Apercu-Medium", Georgia, serif; }
   .about-desc .desc {
     padding-left: 6em;
     position: relative; }
@@ -398,6 +446,7 @@ header {
     .about-desc .rotate .heading {
       font-family: "Karla", Arial, sans-serif;
       font-size: 14px;
+      font-weight:normal
       text-transform: uppercase;
       letter-spacing: 1em;
       -webkit-transform: rotate(90deg);
@@ -937,11 +986,11 @@ header {
 .testimony blockquote {
   border: none; }
   .testimony blockquote p {
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Apercu-Medium", Georgia, serif;
     color: #000;
     font-size: 30px; }
   .testimony blockquote span {
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Apercu-Medium", Georgia, serif;
     color: #000;
     font-size: 30px; }
 

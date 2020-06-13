@@ -1,0 +1,9 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Apercu-Medium";
+
+  src: url("./fonts/ApercuMedium.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/ApercuMedium.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
