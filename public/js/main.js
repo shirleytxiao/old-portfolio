@@ -158,26 +158,16 @@
 		});	
 	};
 
-	
+		// Document on load.
+    	$(function(){
+    		fullHeight();
+    		burgerMenu();
+    		counterWayPoint();
+    		contentWayPoint();
+    		owlCarouselFeatureSlide();
+    	});
 
 
-	// Document on load.
-	$(function(){
-		fullHeight();
-		burgerMenu();
-		counterWayPoint();
-		contentWayPoint();
-		owlCarouselFeatureSlide();
-	});
-
-    // Albi's Responsive Fixed Animated NavBar.
-    $('.navTrigger').click(function () {
-        $(this).toggleClass('active');
-        console.log("Clicked menu");
-        $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
-
-    });
 
 
 }());

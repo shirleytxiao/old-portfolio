@@ -11,10 +11,10 @@ export default class Navigation extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <ul>
-                    <li className="active"><a href="index.html">Home</a></li>
-                    <li className="active"><a href="projects.html">Projects</a></li>
-                    <li className="active"><a href="about.html">About</a></li>
-                    <li className="active"><a href="about.html">Resume</a></li>
+                    <li className="active"><a href="#projects">Projects</a></li>
+                    <li className="active"><a href="#experence">Experience</a></li>
+                    <li className="active"><a href="#about">About</a></li>
+                    <li className="active"><a href="pdfs/SX_Resume.pdf">Resume</a></li>
                   </ul>
                 </div>
               </div>
