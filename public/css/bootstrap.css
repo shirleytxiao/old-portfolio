@@ -1440,8 +1440,8 @@ img {
 /*! added for about pictures */
 .img-about {
   display: block;
-  width: 180px;
-  max-width: 100%;
+  width: auto;
+  max-width: 400px;
   height: auto;
 }
 
@@ -1504,6 +1504,11 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+}
+
+/* added for hover underline */
+h2.hover:hover, h2.focus:focus {
+    text-decoration: underline;
 }
 
 h1 small,
@@ -1998,7 +2003,6 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-display: inline-block
 }
 
 /*added for about pictures*/

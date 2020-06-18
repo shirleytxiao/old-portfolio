@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6, h7 {
   bottom: 0;
   right: 0;
   padding: 4em 40px 40px 40px;
-  width: 180px;
+  width: 180px; /** changed to 180px */
   height: 100%;
   background: white;
   z-index: 1002;
@@ -169,6 +169,8 @@ h1, h2, h3, h4, h5, h6, h7 {
     opacity: 0;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
@@ -415,14 +417,23 @@ header {
       right: -40px;
       content: '';
       background: #000;
-      width: 45px;
+      width: 40px; /* changed to 45px */
       height: 1px; }
 
 /* added for Hi, I'm Shirley.*/
 .hi-name {
-  .hi-name:hover, .hi-name:focus {
+  .hi-name:hover {
     text-decoration: underline;
     text-decoration-color: #cb7878;
+    }
+}
+
+/** added for social media icons */
+p.social-icons a>svg{
+    margin-right: 10px;
+
+    &:hover {
+        transform: scale(1.5);
     }
 }
 
@@ -496,7 +507,14 @@ header {
     color: #bfbfbf;
     font-weight: 600; }
 
-.services-img,
+.services-img {
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
 .work-img,
 .gallery {
   background-size: cover;
@@ -720,30 +738,50 @@ header {
   .services-flex .one-third {
     width: 55%;
     padding: 3em 2em 3em 0; }
+  .services-flex .one-third-edit {
+    width: 100%;
+    padding: 3em 2em 3em 0; }
   .services-flex .one-forth {
     width: 45%; }
-    .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
+    .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth, .services-flex .one-forth .one-third.edit {
       display: inline-block; }
       @media screen and (max-width: 768px) {
-        .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
+        .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth, .services-flex .one-forth .one-third.edit {
           height: 400px; } }
-  .services-flex .one-third, .services-flex .one-forth {
+  .services-flex .one-third, .services-flex .one-forth, .services-flex .one-third.edit {
     display: inline-block; }
     @media screen and (max-width: 768px) {
-      .services-flex .one-third, .services-flex .one-forth {
+      .services-flex .one-third, .services-flex .one-forth, .services-flex .one-third.edit {
         width: 100%;
         display: block; } }
 
 .services {
-  margin-bottom: 4em; }
+  margin-bottom: 2em; }
   .services h3 {
     font-family: "Karla", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    }
+  .services h4 {
+    font-family: "Karla", Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    }
+  .services h5 {
+    font-family: "Karla", Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    }
   .services ul li {
     list-style: none;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 15px;
+    }
     .services ul li::before {
       content: '\2022';
       color: #000;
@@ -997,7 +1035,7 @@ header {
   position: relative;
   margin-bottom: 40px; }
   .f-entry .desc h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 10px; }
     .f-entry .desc h3 a {
