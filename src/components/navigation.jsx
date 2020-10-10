@@ -14,10 +14,10 @@ export default class Navigation extends Component {
                     <li className="active"><a href="https://www.facebook.com/shirleytxiao/">Facebook</a></li>
                     <li className="active"><a href="https://www.linkedin.com/in/s-xiao/">LinkedIn</a></li>
                     <li className="active"><a href="https://www.instagram.com/shrrley/">Instagram</a></li>
-                    <li className="active"><a href="http://github.com/stxiao23">Github</a></li>
+                    <li className="active"><a href="http://github.com/shirleytxiao">Github</a></li>
                     <li className="active"><a href="https://dribbble.com/stxiao">Dribbble</a></li>
                     <li className="active"><a href="mailto:stxiao@berkeley.edu">Email</a></li>
-                    <li className="active"><a href="pdfs/SX_Resume.pdf">Resume</a></li>
+                    <li className="active"><a href="pdfs/Xiao_Resume.pdf">Resume</a></li>
                   </ul>
                 </div>
               </div>
